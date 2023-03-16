@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Example</title>
+    <link rel="stylesheet" href="./css/weatherly.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weatherly</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="weather-info">
+          <!-- ... -->
+<div class="weather-info">
+    <div class="weather-item">
+        <h3 class="weather-item-title">City</h3>
+        <p class="weather-item-value" id="city-name"></p>
+    </div>
+    <!-- ... -->
+<div class="weather-item">
+    <h3 class="weather-item-title">Temperature</h3>
+    <p class="weather-item-value"><span id="temperature"></span>°F</p>
+</div>
+<!-- ... -->
+
+    <div class="weather-item">
+        <h3 class="weather-item-title">Weather Description</h3>
+        <p class="weather-item-value" id="weather-description"></p>
+    </div>
+    <div class="weather-item">
+        <h3 class="weather-item-title">Humidity</h3>
+        <p class="weather-item-value"><span id="humidity"></span>%</p>
+    </div>
+    <div class="weather-item">
+        <h3 class="weather-item-title">Wind Speed</h3>
+        <p class="weather-item-value"><span id="wind-speed"></span> m/s</p>
+    </div>
+</div>
+<!-- ... -->
+
+    </div>
+    <script src="./js/weather_api.js"></script>
+</body>
+</html>
